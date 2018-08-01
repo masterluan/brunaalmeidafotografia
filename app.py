@@ -1,7 +1,5 @@
 import views
-import contact
 import db
-import admin
 
 from flask import Flask
 
