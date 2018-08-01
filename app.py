@@ -11,10 +11,8 @@ def create_app():
     views.configure(app)
     
     #admin.configure(app)
-
     #configurar funçoes
     #contact.configure(app)
-    
     #variaveis 
     app.config['SECRET_KEY']='HSUAHSUHAFUUHDHA'
     return app
