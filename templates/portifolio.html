@@ -6,11 +6,12 @@
   <title>Fotografias Bruna Almeida</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-<link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 <!-- material design-->
-<link href="static/css/material-components-web.css" type="text/css" rel="stylesheet" />
+
+ <link href="{{ url_for('static', filename='css/material-components-web.css') }}" type="text/css" rel="stylesheet"/>
 
 </head>
 <body>

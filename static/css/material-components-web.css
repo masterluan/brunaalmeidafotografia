@@ -2688,7 +2688,6 @@
     color:var(--mdc-theme-text-disabled-on-light, rgba(0,0,0,0.38));
     pointer-events:none
 }
-
 .mdc-image-list{
     display:flex;
     flex-wrap:wrap;
