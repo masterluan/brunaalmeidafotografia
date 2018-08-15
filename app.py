@@ -12,8 +12,9 @@ def create_app():
     
     #admin.configure(app)
     #configurar funçoes
-    #contact.configure(app)
+    #contact.configure(app) 
     #variaveis 
     app.config['SECRET_KEY']='HSUAHSUHAFUUHDHA'
     return app
+
 

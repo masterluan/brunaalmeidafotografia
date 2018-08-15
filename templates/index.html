@@ -17,15 +17,23 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Produtos e Serviços</a></li>
-        <li><a href="#">Portifolio</a></li>
-        <li><a href="#">Contatos e Orçamentos</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+
+      <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">Crianças</a></li>
+          <li><a href="#!">Casais</a></li>
+          <!--<li class="divider"></li>-->
+          <li><a href="#!">Mulheres</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Produtos e Serviços</a></li>
-          <li><a href="#">Portifolio</a></li>
-          <li><a href="#">Contatos e Orçamentos</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#">Contato</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -160,7 +168,7 @@
     </div>
   </div>
 
-  <footer class="page-footer brown  lighten-1">
+    <footer class="page-footer brown  lighten-1">
     <div class="container">
       <div class="row">
         <div class="col l5 s12">
@@ -172,12 +180,12 @@
           <ul>
             <li><a class="white-text" href="#!">Sobre</a></li>
             <li><a class="white-text" href="#!">Produtos e Serviços</a></li>
-            <li><a class="white-text" href="#!">Portifólio</a></li>
-            <li><a class="white-text" href="#!">Contatos e Orçamentos</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="white-text" href="#!">Contato</a></li>
           </ul>
         </div>
         <div class="col l4 s12">
-          <h5 class="white-text">Contatos e Orçamentos</h5>
+          <h5 class="white-text">Contato</h5>
           <ul>
             <li><a class="white-text" href="#!">Facebook</a></li>
             <li><a class="white-text" href="#!">Instagram</a></li>
@@ -205,6 +213,7 @@
     <script>
       $(document).ready(function(){
         $('.materialboxed').materialbox();
+        $(".dropdown-trigger").dropdown();
       });
           
     </script>
