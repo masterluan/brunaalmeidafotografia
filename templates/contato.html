@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fotografias Bruna Almeida</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+<!-- material design-->
+
+ <link href="{{ url_for('static', filename='css/material-components-web.css') }}" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo" > <img style="max-height: 40px;margin-top:10px"class= "responsive-img" src="static/image/logo.jpg" alt="Unsplashed background img 1"/><!--Bruna Almeida  <small>Fotografia</small>  <i class="material-icons right">camera_alt</i> --></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sobre">Sobre</a></li>
+        <!--<li><a href="#">Produtos e Serviços</a></li>-->
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio</a></li>
+        <li><a href="contato">Contato</a></li>
+      </ul>
+
+      <ul id="dropdown1" class="dropdown-content">
+          <!--<li class="divider"></li>-->  
+          <li><a href="port_criancas">Crianças</a></li>
+          <li><a href="port_casais">Casais</a></li>
+          <!--<li class="divider"></li>-->
+          <li><a href="port_mulheres">Mulheres</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+          <li><a href="sobre">Sobre</a></li>
+          <!--<li><a href="#">Produtos e Serviços</a></li>-->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio</a></li>
+          <li><a href="contato">Contato</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+
+
+
+
+<!-- inicio body-->
+<div class="container">
+        <div class="section">
+        
+        </div>
+</div> 
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+
+      <div class="row">
+          <form class="col s12 m6">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Digite seu nome completo" id="first_name" type="text" class="validate">
+                <label for="first_name">Nome*</label>
+              </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Digite seu telefone com DDD" id="telefone" type="text" class="validate">
+                  <label for="telefone">Telefone*</label>
+                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+              <select class="browser-default">
+                <option value="" disabled selected></option>
+                <option value="1">Agendar ensaio</option>
+                <option value="2">Dúvida sobre os ensaios</option>
+                <option value="3">Orçamentos</option>
+                <option value="4">Outros</option>
+              </select>  
+              <label style="align: center"> Motivo do contato</label>
+              </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="message" class="materialize-textarea"></textarea>
+                  <label for="message">Mensagem</label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <button class="btn brown waves-effect waves-light right" type="submit" name="action">Enviar
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </form>
+
+          <div class="col s12 m6">
+              <ul class="collapsible popout" data-collapsible="accordion">
+                
+                <li class="active">
+                  <div class="collapsible-header active">
+                    <i class="material-icons">email</i> Está precisando de ajuda?</div>
+                  <div class="collapsible-body" style="display: block;">
+                    <p>Terei o maior prazer em esclarer todas as suas dúvidas. Você pode entrar em contato diretamente pelo e-mail(<a mailto="brunaalmeidafotosrj@gmail.com.br">brunaalmeidafotosrj@gmail.com.br</a>) ou se preferir através do telefone/WhatsApp (21)98007-6009. Além disso também é possível enviar esse formulário que eu retorno o mais rápido possível ;)  </p>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+      </div>  
+        </div>
+    
+  </div>
+  </div>         
+
+
+
+
+
+
+
+
+<!-- FIM BODY -->
+<footer class="page-footer brown  lighten-1 ">
+    <div class="container">
+        <div class="row">
+        <div class="col l5 s12">
+            <h5 class="white-text">Bruna Almeida Fototografia</h5>
+            <p class="grey-text text-lighten-4 responsive ">Fotógrafa de pessoas especializada em familias, ensaios de mulheres , crianças e casais. Fotos claras e que passam a emoção do momento.</p>
+        </div>
+        <div class="col l3 s12">
+    
+            <ul>
+            <li><a class="white-text" href="sobre">Sobre</a></li>
+            <!--<li><a class="white-text" href="#!">Produtos e Serviços</a></li>-->
+            <li><a class="white-text dropdown-trigger" href="#!" data-target="dropdown1">Portifólio</a></li>
+            <li><a class="white-text" href="contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="col l4 s12">
+            <h5 class="white-text">Contato</h5>
+            <ul>
+            <li><a class="white-text" href="https://www.facebook.com.br/brunalalmeidafotos">Facebook</a></li>
+            <li><a class="white-text" href="https://www.Instagram.com.br/brunalalmeidafotos">Instagram</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        Todos os direits são exclusivos e reservados à Bruna Almeida Fotografia LTDA
+        </div>
+    </div>
+    </footer>
+
+    <!--  Scripts-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+
+    <!--mterial design-->
+
+    <script src="{{ url_for('static', filename='js/material-components-web.min.js') }}"></script>
+
+   <script>
+     $(document).ready(function(){
+       $('.materialboxed').materialbox();
+       $(".dropdown-trigger").dropdown();
+       $('.slider').slider();
+
+       $('select').material_select();
+       $('#textarea1').trigger('autoresize');
+
+      
+        });
+            
+    </script>
+    </body>
+</html>
+        
