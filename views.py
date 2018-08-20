@@ -31,6 +31,14 @@ def configure(app):
           #  problema = problema ,
         
     #    )
+    @app.route("/sobre")
+    def sobre():
+        #conexao com o banco de dados para buscarga o problema
+        return render_template(
+            'sobre.html'#, 
+          #  problema = problema ,
+        
+       )
     @app.route("/contato")
     def contato():
         #conexao com o banco de dados para buscarga o problema
