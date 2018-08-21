@@ -7,45 +7,47 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
-  
-
 <body>
+  <!-- INICIO NAVBAR-->  
   <div class="navbar-fixed">  
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="/" class="brand-logo" > <img style="max-height: 40px;margin-top:10px"class= "responsive-img" src="static/image/logo.jpg" alt="Unsplashed background img 1"/><!--Bruna Almeida  <small>Fotografia</small>  <i class="material-icons right">camera_alt</i> --></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sobre">Sobre</a></li>
-            <!--<li><a href="#">Produtos e Serviços</a></li>-->
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio</a></li>
-            <li><a href="contato">Contato</a></li>
-            <li></li>
-          </ul>
-    
-          <ul id="dropdown1" class="dropdown-content">
-              <li><a href="porti_casais">Casais</a></li>
-              <li><a href="port_mulheres">Ensaio feminino</a></li>
-              <li><a href="port_criancas">Fotografia Infantil</a></li>
-              
-              <!--<li class="divider"></li>-->
-              
-          </ul>
-    
-          <ul id="nav-mobile" class="sidenav">
+      <nav class="white" role="navigation">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo" > <img style="max-height: 40px;margin-top:10px"class= "responsive-img" src="static/image/logo.jpg" alt="Unsplashed background img 1"/><!--Bruna Almeida  <small>Fotografia</small>  <i class="material-icons right">camera_alt</i> --></a>
+            <ul class="right hide-on-med-and-down">
               <li><a href="sobre">Sobre</a></li>
-              <!--<li><a href="#">Produtos e Serviços</a></li>-->
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio</a></li>
               <li><a href="contato">Contato</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
+              <li> <a href="https://www.facebook.com/brunaalmeidafotos"><img class="responsive-img" src="static/image/facebook-icon.jpg" style="height: 30px; margin-top: 15px;" alt="facebook"></a></li>
+              <li> <a href="https://www.instagram.com/brunaalmeidafotos"><img class="responsive-img" src="static/image/instagram-icon.jpg" style="height: 30px; margin-top: 15px;" alt="instagram"></a></li>
+              <li> <a href="mailto:brunaalmeidafotosrj@gmail.com.br"><img class="responsive-img" src="static/image/email-icon.jpg" style="height: 30px; margin-top: 15px;" alt="email"></a></li> 
+            </ul>
+      
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="porti_casais">Casais</a></li>
+                <li><a href="port_mulheres">Ensaio feminino</a></li>
+                <li><a href="port_criancas">Fotografia Infantil</a></li>
+            </ul>
+      
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="sobre">Sobre</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Portifólio</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li> <a href="https://www.facebook.com/brunaalmeidafotos"><img class="responsive-img" src="static/image/facebook-icon.jpg" style="height: 30px; margin-top: 15px;" alt="facebook"></a></li>
+              <li> <a href="https://www.instagram.com/brunaalmeidafotos"><img class="responsive-img" src="static/image/instagram-icon.jpg" style="height: 30px; margin-top: 15px;" alt="instagram"></a></li>
+              <li> <a href="mailto:brunaalmeidafotosrj@gmail.com.br"><img class="responsive-img" src="static/image/email-icon.jpg" style="height: 30px; margin-top: 15px;" alt="email"></a></li>     
+                
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
     </div>
+      
+<!-- FIM NAVBAR-->  
+
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">  
       <div class="container">
@@ -210,14 +212,20 @@
   <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-    <script src="static/js/materialize.js"></script>
-    <script src="static/js/init.js"></script>
+  crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+
+  <!--mterial design-->
+
+  <script src="{{ url_for('static', filename='js/material-components-web.min.js') }}"></script>
 
     <script>
       $(document).ready(function(){
         $('.materialboxed').materialbox();
-        $(".dropdown-trigger").dropdown();
+        $('.dropdown-trigger').dropdown();
+       
       });
           
     </script>
