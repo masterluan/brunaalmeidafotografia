@@ -2815,7 +2815,7 @@ video.responsive-video {
   position: relative;
   overflow: hidden;
   height: 500px;
-}
+}  
 
 .parallax-container .parallax {
   position: absolute;
@@ -2833,8 +2833,10 @@ video.responsive-video {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(-50%, 355.605px, 0);
+          transform: translate3d(-50%, 355.605px, 0);
+
+
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }

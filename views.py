@@ -23,14 +23,14 @@ def configure(app):
           #  problema = problema ,
         
      #   )
-    # @app.route("/port_mulheres")
-    #def port_mulheres():
+    @app.route("/port_mulheres")
+    def port_mulheres():
         #conexao com o banco de dados para buscarga o problema
-    #    return render_template(
-    #        'port_mulheres.html'#, 
+       return render_template(
+           'port_mulheres.html'#, 
           #  problema = problema ,
         
-    #    )
+       )
     @app.route("/sobre")
     def sobre():
         #conexao com o banco de dados para buscarga o problema
